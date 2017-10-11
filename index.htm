@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FLEXSLIDER</title>
+    
+   <!-- fontawesome ICONS-->
+   <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+   
+    <!-- Demo CSS -->
+    <link rel="stylesheet" href="./css/demo.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="./css/flexslider.css" type="text/css" media="screen">
+</head>
+
+<body>
+<!--   https://github.com/woocommerce/FlexSlider.git-->
+    <div id="container" class="cf">
+        <div id="main" role="main">
+            <section class="slider">
+                <div class="flexslider">
+                    <div class="flex-viewport" style="overflow: hidden; position: relative;">
+                        <ul class="slides" style="width: 1200%; transition-duration: 0s; transform: translate3d(-512px, 0px, 0px);">
+                            <li class="clone" aria-hidden="true" style="width: 512px; margin-right: 0px; float: left; display: block;">
+                                <img src="./img/kitchen_adventurer_caramel.jpg" draggable="false">
+                            </li>
+                            <li style="width: 512px; margin-right: 0px; float: left; display: block;" class="flex-active-slide" data-thumb-alt="">
+                                <img src="./img/kitchen_adventurer_cheesecake_brownie.jpg" draggable="false">
+                            </li>
+                            <li data-thumb-alt="" style="width: 512px; margin-right: 0px; float: left; display: block;" class="">
+                                <img src="./img/kitchen_adventurer_lemon.jpg" draggable="false">
+                            </li>
+                            <li data-thumb-alt="" style="width: 512px; margin-right: 0px; float: left; display: block;" class="">
+                                <img src="./img/kitchen_adventurer_donut.jpg" draggable="false">
+                            </li>
+                            <li data-thumb-alt="" style="width: 512px; margin-right: 0px; float: left; display: block;" class="">
+                                <img src="./img/kitchen_adventurer_caramel.jpg" draggable="false">
+                            </li>
+                            <li style="width: 512px; margin-right: 0px; float: left; display: block;" class="clone" aria-hidden="true">
+                                <img src="./img/kitchen_adventurer_cheesecake_brownie.jpg" draggable="false">
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="flex-direction-nav">
+                        <li class="flex-nav-prev">
+                            <a class="flex-prev" href="#">
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="flex-nav-next">
+                            <a class="flex-next" href="#">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="./js/jquery.min.js"></script>
+
+    <!-- FlexSlider -->
+    <script defer="" src="./js/jquery.flexslider.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            SyntaxHighlighter.all();
+        });
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function(slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
