@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.column img {
+    margin-top: 12px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Responsive Image Grid</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="img/wedding.jpg" style="width:100%">
+    <img src="img/rocks.jpg" style="width:100%">
+    <img src="img/falls2.jpg" style="width:100%">
+    <img src="img/paris.jpg" style="width:100%">
+    <img src="img/nature.jpg" style="width:100%">
+    <img src="img/mist.jpg" style="width:100%">
+    <img src="img/paris.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img/underwater.jpg" style="width:100%">
+    <img src="img/ocean.jpg" style="width:100%">
+    <img src="img/wedding.jpg" style="width:100%">
+    <img src="img/mountainskies.jpg" style="width:100%">
+    <img src="img/rocks.jpg" style="width:100%">
+    <img src="img/underwater.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="img/wedding.jpg" style="width:100%">
+    <img src="img/rocks.jpg" style="width:100%">
+    <img src="img/falls2.jpg" style="width:100%">
+    <img src="img/paris.jpg" style="width:100%">
+    <img src="img/nature.jpg" style="width:100%">
+    <img src="img/mist.jpg" style="width:100%">
+    <img src="img/paris.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img/underwater.jpg" style="width:100%">
+    <img src="img/ocean.jpg" style="width:100%">
+    <img src="img/wedding.jpg" style="width:100%">
+    <img src="img/mountainskies.jpg" style="width:100%">
+    <img src="img/rocks.jpg" style="width:100%">
+    <img src="img/underwater.jpg" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>
